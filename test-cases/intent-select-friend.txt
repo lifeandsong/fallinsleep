@@ -1,0 +1,47 @@
+{
+    "version": "0.1.0",
+    "session": {
+        "sessionId": "dcc62661-8531-4869-88d8-e5fae04011ca",
+        "sessionAttributes": {},
+        "user": {
+            "userId": "Dq5DSnyYS4KZ0voJ3OFuDQ",
+            "accessToken": "5d81c882-9132-42f9-8569-edf7285e6cff"
+        },
+        "new": true
+    },
+    "context": {
+        "System": {
+            "application": {
+                "applicationId": "fallinsleep.lifeandsong.ai"
+            },
+            "user": {
+                "userId": "Dq5DSnyYS4KZ0voJ3OFuDQ",
+                "accessToken": "5d81c882-9132-42f9-8569-edf7285e6cff"
+            },
+            "device": {
+                "deviceId": "bcc0c19c-8cf3-48f9-a7d4-f733a212cef9",
+                "display": {
+                    "size": "l100",
+                    "orientation": "landscape",
+                    "dpi": 96,
+                    "contentLayer": {
+                        "width": 640,
+                        "height": 360
+                    }
+                }
+            }
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "intent": {
+            "name": "SelectFriend",
+            "slots": {
+                "friend": {
+                    "name": "friend",
+                    "value": "별"
+                }
+            }
+        }
+    }
+}

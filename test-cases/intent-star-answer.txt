@@ -1,0 +1,47 @@
+{
+    "version": "0.1.0",
+    "session": {
+        "sessionId": "6b77b1a2-b4cb-438f-b16f-e50368084a79",
+        "sessionAttributes": {},
+        "user": {
+            "userId": "raQhlGxDSsOe6Bwjs4vYWQ",
+            "accessToken": "7730676e-551d-4560-a472-c8ddd98f2584"
+        },
+        "new": true
+    },
+    "context": {
+        "System": {
+            "application": {
+                "applicationId": "fallinsleep.lifeandsong.ai"
+            },
+            "user": {
+                "userId": "raQhlGxDSsOe6Bwjs4vYWQ",
+                "accessToken": "7730676e-551d-4560-a472-c8ddd98f2584"
+            },
+            "device": {
+                "deviceId": "ead58ebf-bf9c-4957-882e-bb90144134bb",
+                "display": {
+                    "size": "l100",
+                    "orientation": "landscape",
+                    "dpi": 96,
+                    "contentLayer": {
+                        "width": 640,
+                        "height": 360
+                    }
+                }
+            }
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "intent": {
+            "name": "StarAnswer",
+            "slots": {
+                "starCount": {
+                    "name": "starCount",
+                    "value": "둘"
+                }
+            }
+        }
+    }
+}

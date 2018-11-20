@@ -1,0 +1,47 @@
+{
+    "version": "0.1.0",
+    "session": {
+        "sessionId": "34d23eb8-63c2-4e41-89a9-cfb36d1c2ee4",
+        "sessionAttributes": {},
+        "user": {
+            "userId": "QtJIPC7wR6mJUOobZIrQLQ",
+            "accessToken": "f5b49537-b132-41ef-9b2a-406595ffd13b"
+        },
+        "new": true
+    },
+    "context": {
+        "System": {
+            "application": {
+                "applicationId": "fallinsleep.lifeandsong.ai"
+            },
+            "user": {
+                "userId": "QtJIPC7wR6mJUOobZIrQLQ",
+                "accessToken": "f5b49537-b132-41ef-9b2a-406595ffd13b"
+            },
+            "device": {
+                "deviceId": "f060904f-5678-4925-a620-ee943373ac12",
+                "display": {
+                    "size": "l100",
+                    "orientation": "landscape",
+                    "dpi": 96,
+                    "contentLayer": {
+                        "width": 640,
+                        "height": 360
+                    }
+                }
+            }
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "intent": {
+            "name": "BearAnswer",
+            "slots": {
+                "bearCount": {
+                    "name": "bearCount",
+                    "value": "백"
+                }
+            }
+        }
+    }
+}

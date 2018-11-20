@@ -1,0 +1,47 @@
+{
+    "version": "0.1.0",
+    "session": {
+        "sessionId": "0aa93403-2eff-4b7a-9c3f-62dc613642ed",
+        "sessionAttributes": {},
+        "user": {
+            "userId": "JdVK4bWlQVaLGRAXA8mBIQ",
+            "accessToken": "b3eaaebd-6677-486c-bcef-62ec9ab49db4"
+        },
+        "new": true
+    },
+    "context": {
+        "System": {
+            "application": {
+                "applicationId": "fallinsleep.lifeandsong.ai"
+            },
+            "user": {
+                "userId": "JdVK4bWlQVaLGRAXA8mBIQ",
+                "accessToken": "b3eaaebd-6677-486c-bcef-62ec9ab49db4"
+            },
+            "device": {
+                "deviceId": "e42ecc61-7168-4595-ae77-472aa7d803cd",
+                "display": {
+                    "size": "l100",
+                    "orientation": "landscape",
+                    "dpi": 96,
+                    "contentLayer": {
+                        "width": 640,
+                        "height": 360
+                    }
+                }
+            }
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "intent": {
+            "name": "SheepAnswer",
+            "slots": {
+                "sheepCount": {
+                    "name": "sheepCount",
+                    "value": "열여섯"
+                }
+            }
+        }
+    }
+}
