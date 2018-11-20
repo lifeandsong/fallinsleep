@@ -50,7 +50,7 @@
 * 2018.11.20. 현재 사용료 무료 
 
 4.3. 프로그램 명세
-* make_entity_data.js : starCount, animalCount Entity로 등록할 데이터를 담은 .txt 파일을 생성하는 프로그램 
+* make_entity_data.js : starCount, animalCount Entity로 등록할 데이터를 담은 .tsv 파일을 생성하는 프로그램. 생성된 .tsv 파일들을 Clova Developer's Console에서 Entity를 생성할 때 업로드 하면 됨 
 * index.js : Clova와 연동할 Webhook 프로그램
 
 4.4. 참고자료
