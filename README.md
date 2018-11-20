@@ -1,10 +1,10 @@
-# fallinsleep
+# 잠재우기 
 
-1. 개요
+## 1. 개요
 * “잠재우기”는 쉽게 잠이 못드는 어린이들을 재워주는 Naver Custom Extension Skill 입니다.
 
 
-2. 사용 예
+## 2. 사용 예
 
 2.1. 최초 발화 : (사용자) 헤이, 클로바! 잠재우기 시작해줘
 
@@ -22,7 +22,7 @@
 * (클로바) 나 이제 졸려서 그만 잘게. 너도 잘 자.
 
 
-3. Intent, Reprompt & Entity
+## 3. Intent, Reprompt & Entity
 * Clova Developer's Console(https://developers.naver.com/console/clova/) Intent, Entity 등록을 해야 합니다.
 
 3.1. SelectFriend : 사용자가 수를 셀 친구를 선택하면 이를 처리하는 Intent
@@ -40,7 +40,7 @@
 * yesno : 응, 아니, 자려고, …
 
 
-4. 개발
+## 4. 개발
 
 4.1. 개발 언어 : Javascript NodeJS v6 
 
@@ -57,6 +57,6 @@
 * index.js 는 Clova의 Extension 예제 중 https://github.com/naver/clova-extension-sample-dice 를 참고했고 주요 코드를 그대로 사용함
 
 
-5. 외부 리소스
+## 5. 외부 리소스
 
 5.1. 자장가 음원 : archieve.org에 공개된 자장가 음악를 맨 마지막에 들려줍니다.
