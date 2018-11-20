@@ -1,6 +1,8 @@
 /**
  * "잠재우기" for Naver Clova
- * on Naver Cloud Platform
+ * - Cloud Funtions on Naver Cloud Platform
+ * - Clova 공식 문서 내 예제 참조
+ *   https://github.com/naver/clova-extension-sample-dice/blob/github-public/clova/index.js
  * 
  * @since  2018-11-04
  * @author lifeandsong
@@ -9,17 +11,6 @@
 const uuid = require('uuid').v4
 const _ = require('lodash')
 // const { DOMAIN } = require('../config')
-
-// class Directive {
-//   constructor({namespace, name, payload}) {
-//     this.header = {
-//       messageId: uuid(),
-//       namespace: namespace,
-//       name: name
-//     }
-//     this.payload = payload
-//   }
-// }
 
 class NumberConverter {
     constructor () {
@@ -139,10 +130,6 @@ class CEKRequest {
             if ((!! this.session)
                 && (!! this.session.sessionAttributes)
                 && (!! this.session.sessionAttributes.count)) {
-                // count = this.session.sessionAttributes.count
-
-                // if (!! this.session.sessionAttributes.friend)
-                //     friend = this.session.sessionAttributes.friend
         
                 intentName = this.getIntentByFriend(friend, answerValues)
                 cekResponse.appendSpeechText("자니?")
@@ -193,13 +180,6 @@ class CEKRequest {
             answer = slots.answer.value
 
         console.log("answer=" + answer)
-        // if ((!! this.session) && (!! this.session.sessionAttributes)) {
-        //     if (!! this.session.sessionAttributes.count)
-        //         count = this.session.sessionAttributes.count
-
-        //     if (!! this.session.sessionAttributes.friend)
-        //         friend = this.session.sessionAttributes.friend
-        // }
         console.log("friend=" + answerValues[intent]["friend"] + ", count=" + count)
 
         let userCount = numberConverter.textToNumber(answer, answerValues[intent]["zeroToNineIdx"])
@@ -231,17 +211,6 @@ class CEKRequest {
 
         console.log("yesno=" + yesno)
         if (yesno != "응") {
-            // if ((!! this.session) && (!! this.session.sessionAttributes)) {
-            //     if (!! this.session.sessionAttributes.intent)
-            //         intentName = this.session.sessionAttributes.intent
-
-            //     if (!! this.session.sessionAttributes.count)
-            //         count = this.session.sessionAttributes.count
-
-            //     if (!! this.session.sessionAttributes.friend)
-            //         friend = this.session.sessionAttributes.friend
-            // }
-
             script = "응, 그럼 내가 계속 할게. "
                         + this.getAnswerByIntent(numberConverter, count, intentName, answerValues)
             cekResponse.appendSpeechText(script)
@@ -264,16 +233,6 @@ class CEKRequest {
     default:
         console.log("IntentRequst: default")
         cekResponse.setSimpleSpeechText("자니?")
-        // if ((!! this.session) && (!! this.session.sessionAttributes)) {
-        //     if (!! this.session.sessionAttributes.intent)
-        //         intentName = this.session.sessionAttributes.intent
-
-        //     if (!! this.session.sessionAttributes.count)
-        //         count = this.session.sessionAttributes.count
-
-        //     if (!! this.session.sessionAttributes.friend)
-        //         friend = this.session.sessionAttributes.friend
-        // }
         this.setMultiturnSessionAttributes(cekResponse, intentName, friend, count)
     }
   }
