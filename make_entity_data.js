@@ -17,15 +17,9 @@ const multiple10List = [ "", "열", "스물", "서른", "마흔", "쉰", "예순
 const slotValues = {
 
     // 양 한마리, 양 두마리, 양 세마리, ...
-    "sheep": {
-        "filePath": "./data/sheepCount.tsv",
-        "multiple10": multiple10List,
-        "zeroToNine": zeroToNineList[0]
-    },
-
     // 곰 한마리, 곰 두마리, 곰 세마리, ...
-    "bear": {
-        "filePath": "./data/bearCount.tsv",
+    "animal": {
+        "filePath": "./data/animalCount.tsv",
         "multiple10": multiple10List,
         "zeroToNine": zeroToNineList[0]
     },
