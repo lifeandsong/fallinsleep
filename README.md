@@ -23,7 +23,7 @@
 
 
 ## 3. Intent, Reprompt & Entity
-* Clova Developer's Console(https://developers.naver.com/console/clova/) Intent, Entity 등록을 해야 합니다.
+* Clova Developer's Console(https://developers.naver.com/console/clova/)에 Intent, Entity 등록을 해야 합니다.
 
 3.1. SelectFriend : 사용자가 수를 셀 친구를 선택하면 이를 처리하는 Intent
 * friend : 별, 양, 곰
